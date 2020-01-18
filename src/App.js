@@ -1,7 +1,7 @@
 import React from "react";
 
 import Header from "./components/header";
-// import Visual from "./components/visual";
+import Visual from "./components/visual";
 // import Container from "./components/container";
 // import Footer from "./components/footer";
 
@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Header />
-      {/* <Visual />
-      <Container />
+      <Visual />
+      {/* <Container />
       <Footer /> */}
     </div>
   );
