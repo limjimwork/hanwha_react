@@ -1,4 +1,4 @@
-export const Lang = ["KOR", "ENG", "CHI"];
+export const Lang = ["kor", "eng", "chi"];
 
 export const Menus = [
   {

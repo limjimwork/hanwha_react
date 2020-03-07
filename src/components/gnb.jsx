@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
 const GnbItems = props => {
+  const [hovered, setHovered] = useState(false);
+  const toggleHover = () => setHovered(!hovered);
+
   return (
-    <li>
+    <li
+      className={hovered ? "on" : undefined}
+      onMouseEnter={toggleHover}
+      onMouseLeave={toggleHover}
+    >
       <a href="/">{props.menu.title}</a>
       <ul className="sub">
         {props.menu.items.map((submenu, idx) => {

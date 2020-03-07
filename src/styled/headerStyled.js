@@ -37,7 +37,8 @@ export const HeaderStyled = {
 
     .topmenu a {
       color: #636363;
-      font-size: 0.8em;
+      font-size: 11.5px;
+      text-transform: uppercase;
       padding-left: 9px;
       padding-right: 4px;
       background: url("/images/main/bar_top.png") no-repeat 0 50%;
@@ -48,7 +49,7 @@ export const HeaderStyled = {
       color: #f37321;
     }
 
-    .topmenu .KOR {
+    .topmenu .kor {
       background: none;
     }
 
@@ -71,7 +72,7 @@ export const HeaderStyled = {
 
     #gnb > li > a {
       display: block;
-      font-size: 1.2em;
+      font-size: 17px;
       font-weight: 500;
     }
 
@@ -142,7 +143,7 @@ export const HeaderStyled = {
     .bg_sub {
       position: absolute;
       display: none;
-      width: 960px;
+      width: 100%;
       height: 200px;
       background-color: rgb(255, 255, 255);
       background-color: rgba(255, 255, 255, 0.8);
@@ -176,7 +177,7 @@ export const HeaderStyled = {
       .logo {
         width: 141.6px;
         height: 42.4px;
-        margin-left: 30px;
+        margin: 18.4px 0px 16px 10px;
       }
 
       .topmenu,
@@ -195,8 +196,8 @@ export const HeaderStyled = {
 
       .m_icon {
         position: absolute;
-        top: 35px;
-        right: 30px;
+        top: 30px;
+        right: 10px;
         width: 25px;
         height: 25px;
       }
@@ -228,7 +229,18 @@ export const HeaderStyled = {
         position: fixed;
         top: 0;
         right: -100%;
+        width: 40px;
+        height: 40px;
         transition: 0.5s;
+        > button {
+          display: block;
+          width: 100%;
+          height: 100%;
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
 
       #m_gnb {
@@ -239,16 +251,17 @@ export const HeaderStyled = {
         background-color: rgba(78, 78, 78, 0.9);
         width: 50%;
         height: 100%;
+        padding-top: 40px;
         overflow-y: scroll;
         transition: 0.5s;
       }
 
       #m_gnb > li > a {
-        color: #fff;
-        font-size: 14px;
-        text-transform: uppercase;
+        font-size: 16px;
         line-height: 2.5;
         text-indent: 40px;
+        text-transform: uppercase;
+        color: #fff;
       }
 
       .m_sub {
@@ -270,13 +283,41 @@ export const HeaderStyled = {
 
       .m_sub > li > a {
         color: #fff;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 2.5;
         text-indent: 40px;
       }
     }
 
     @media all and (max-width: 767px) {
+      .logo {
+        width: 88.5px;
+        height: 26.5px;
+        margin: 11.5px 0px 10px 10px;
+      }
+
+      .m_icon {
+        top: 17px;
+        width: 16px;
+        height: 16px;
+      }
+
+      .btn_close {
+        width: 25px;
+        height: 25px;
+      }
+
+      #m_gnb {
+        padding-top: 25px;
+      }
+
+      #m_gnb > li > a {
+        font-size: 14px;
+      }
+
+      .m_sub > li > a {
+        font-size: 12px;
+      }
     }
   `
 };

@@ -93,7 +93,7 @@ export const VisualStyled = {
     /* VISUAL END */
 
     /* 태블릿 */
-    @media all and (min-width: 768px) and (max-width: 1024px) {
+    @media all and (max-width: 1024px) {
       height: 40vw;
 
       .ban {
@@ -106,29 +106,26 @@ export const VisualStyled = {
         font-size: 3vw;
         text-align: center;
         text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+      }
+
+      .btn_banner > li {
+        width: 14px;
+        height: 14px;
+        margin: 0 5px;
       }
     }
 
     /* 모바일 */
 
     @media all and (max-width: 767px) {
-      /* banner */
-      height: 40vw;
-
-      .ban {
-        height: 40vw;
-      }
-
-      .ban > p,
-      .ban span {
-        margin: 20% 0;
-        font-size: 3vw;
-        text-align: center;
-        text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
-      }
-
       .btn_banner {
         bottom: 5px;
+      }
+
+      .btn_banner > li {
+        width: 12px;
+        height: 12px;
+        margin: 0 5px;
       }
     }
   `
