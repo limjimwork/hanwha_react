@@ -95,8 +95,8 @@ const Container = () => {
         </div>
 
         <div
-          className={"bg_popup" + (showVideo ? " on" : "")}
-          onClick={() => setShowVideo(!showVideo)}
+          className={!!showVideo ? "bg_popup on" : "bg_popup"}
+          onClick={() => setShowVideo(false)}
         >
           <div className="video_area">
             <img src="/images/main/bg_pop.jpg" alt="동영상사진" />
@@ -105,12 +105,13 @@ const Container = () => {
 
         <div className="board">
           <div className="center clearfix">
-            <section
-              className="clip board_box"
-              onClick={() => setShowVideo((showVideo = true))}
-            >
+            <section className="clip board_box">
               <h3 className="blind">동영상보기</h3>
-              <img src="/images/main/con_05.jpg" alt="취향을 담다" />
+              <img
+                src="/images/main/con_05.jpg"
+                alt="취향을 담다"
+                onClick={() => setShowVideo(true)}
+              />
             </section>
             <section className="co_info board_box clearfix">
               <div className="recruit">

@@ -2,7 +2,7 @@ import React from "react";
 
 const SkipNav = () => {
   return (
-    <ul class="skip">
+    <ul className="skip">
       <li>
         <a href="#container">본문바로가기</a>
       </li>
