@@ -1,8 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { VisualStyled } from "../styled/visualStyled";
+
+function useInterval(callback, delay) {
+  const savedCallback = useRef();
+
+  // Remember the latest callback.
+  useEffect(() => {
+    savedCallback.current = callback;
+  }, [callback]);
+
+  // Set up the interval.
+  useEffect(() => {
+    function tick() {
+      savedCallback.current();
+    }
+    if (delay !== null) {
+      let id = setInterval(tick, delay);
+      return () => clearInterval(id);
+    }
+  }, [delay]);
+}
 
 const Visual = () => {
   const [index, setIndex] = useState(0);
+  const [mouseOver, setMouseOver] = useState(false);
 
   const bannerText = [
     <p className="blind">온라인몰 할인</p>,
@@ -33,8 +54,17 @@ const Visual = () => {
     );
   });
 
+  useInterval(() => {
+    if (!mouseOver) {
+      setIndex((index + 1) % 4);
+    }
+  }, 3000);
+
   return (
-    <VisualStyled.Wrap>
+    <VisualStyled.Wrap
+      onMouseOver={() => setMouseOver(true)}
+      onMouseOut={() => setMouseOver(false)}
+    >
       {banner}
       <ul className="btn_banner clearfix">{content}</ul>
     </VisualStyled.Wrap>

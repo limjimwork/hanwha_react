@@ -43,7 +43,7 @@ const Footer = () => {
 
         <small>
           본 사이트는 포트폴리오 용도로 제작된 가상 사이트입니다. 모든 콘텐츠의
-          저작권은 한화L&amp;C 및 해당사에 있음을 밝힙니다. designed by 임정임{" "}
+          저작권은 한화L&amp;C 및 해당사에 있음을 밝힙니다. designed by 임정임
         </small>
       </div>
     </FooterStyled.Wrap>

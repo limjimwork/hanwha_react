@@ -93,27 +93,39 @@ export const FooterStyled = {
 
       /* footer */
       > div {
-        padding: 2% 0 7%;
+        padding: 2% 0;
       }
 
       .foot_logo {
-        width: 30%;
-        margin-left: 30px;
+        width: 141.6px;
+        height: 42.4px;
+        margin-left: 10px;
+        > a {
+          display: block;
+          > img {
+            width: 100%;
+            height: 100%;
+          }
+        }
       }
 
       .foot_menu {
-        width: 35%;
+        display: none;
       }
 
       form {
-        width: 24%;
+        float: right;
+        margin-top: 0;
+        padding-top: 6px;
+        padding-right: 10px;
       }
 
       small {
-        position: absolute;
-        bottom: 0;
-        left: 40px;
+        display: block;
+        width: 100%;
+        text-align: center;
         line-height: 1.5;
+        margin-top: 10px;
       }
     }
 
@@ -125,34 +137,30 @@ export const FooterStyled = {
 
       > div {
         position: relative;
-        padding: 0;
+        padding: 10px 0;
+        box-sizing: border-box;
       }
 
       .foot_logo {
-        float: none;
-        width: 30%;
-        margin: 10px 0;
-      }
-
-      .foot_logo img {
-        width: 100%;
-        height: 100%;
-      }
-
-      .foot_menu {
-        display: none;
-      }
-
-      small {
-        line-height: 1.5;
+        width: 88.5px;
+        height: 26.5px;
       }
 
       form {
-        float: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        margin-top: 0;
+        margin-right: 10px;
+        padding-top: 0;
+        padding-right: 0;
+      }
+
+      #site {
+        width: 120px;
+        height: 25px;
+        padding: 0 20px;
+      }
+
+      small {
+        padding: 0 20px;
+        box-sizing: border-box;
       }
     }
   `
