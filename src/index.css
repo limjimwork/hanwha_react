@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Center */
+.center {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* COMMON.CSS END */
+
+@media all and (max-width: 1024px) {
+  /* header */
+  header,
+  .center {
+    width: 100%;
+  }
+}

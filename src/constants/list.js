@@ -1,4 +1,4 @@
-export const Lang = ["kor", "eng", "chi"];
+export const Langs = ["kor", "eng", "chi"]
 
 export const Menus = [
   {
@@ -9,8 +9,8 @@ export const Menus = [
       "연혁",
       "윤리경영",
       "환경/안전경영",
-      "동반성장"
-    ]
+      "동반성장",
+    ],
   },
   {
     title: "제품정보",
@@ -20,8 +20,8 @@ export const Menus = [
       "창호재",
       "데코마감재/필름",
       "인테리어스톤",
-      "가구"
-    ]
+      "가구",
+    ],
   },
   {
     title: "전시/매장",
@@ -31,19 +31,19 @@ export const Menus = [
       "대리점찾기",
       "온라인공식몰",
       "고객의소리",
-      "FAQ"
-    ]
+      "FAQ",
+    ],
   },
   {
     title: "채용정보",
-    items: ["인사제도", "JOB in L&C", "인재채용"]
+    items: ["인사제도", "JOB in L&C", "인재채용"],
   },
   {
     title: "홍보센터",
-    items: ["한화L&C뉴스", "인쇄광고", "사회공헌", "제품협찬", "소비자패널"]
+    items: ["한화L&C뉴스", "인쇄광고", "사회공헌", "제품협찬", "소비자패널"],
   },
   {
     title: "L&C in TV",
-    items: ["취향을 담다", "내집이 나타났다", "LET美HOME"]
-  }
-];
+    items: ["취향을 담다", "내집이 나타났다", "LET美HOME"],
+  },
+]
