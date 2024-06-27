@@ -2,15 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Center */
 .center {
   width: 1200px;
   margin: 0 auto;
 }
-/* COMMON.CSS END */
+
+.blind {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -9999em;
+}
 
 @media all and (max-width: 1024px) {
-  /* header */
   header,
   .center {
     width: 100%;
