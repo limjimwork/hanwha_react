@@ -2,7 +2,7 @@ import clsx from "clsx"
 
 const Gnb = ({ menus }) => {
   return (
-    <nav className="relative group w-full ml-5">
+    <nav className="relative hidden w-full ml-5 group lg:block">
       <h2 className="blind">메인메뉴</h2>
       <ul id="gnb" className="flex justify-between text-center">
         {menus.map((menu, idx) => (

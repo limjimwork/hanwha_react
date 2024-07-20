@@ -1,17 +1,14 @@
-// import { useState } from "react"
 import clsx from "clsx"
 
 import { Langs, Menus } from "../constants/list"
 
 import Gnb from "./gnb"
-// import MobileGnbItem from "./mobileGnb"
+import MobileGnbItem from "./mobileGnb"
 
 const Header = () => {
-  // const [clickedMicon, setClickedMicon] = useState(false)
-
   return (
     <header className="center">
-      <ul className="flex justify-end py-5 mr-10">
+      <ul className="hidden justify-end py-5 mr-10 lg:flex">
         {Langs.map((lang, idx) => {
           return (
             <li key={idx} className="text-sm text-secondary-gray">
@@ -36,39 +33,24 @@ const Header = () => {
       </ul>
 
       <div className="flex justify-between items-center">
-        <h1 className="h-full -mt-8">
+        <h1
+          className={clsx(
+            "max-w-[177px]",
+            "min-w-[110px]",
+            "w-[35vw]",
+            "h-full",
+            "px-3 py-2",
+            "lg:-mt-8",
+            "lg:px-0 lg:py-0"
+          )}
+        >
           <a href="/">
             <img src="/images/main/logo.png" alt="The Space Creator 한화 LnC" />
           </a>
         </h1>
 
         <Gnb menus={Menus} />
-
-        {/* <div className={"m_gnb_wrap" + (clickedMicon ? " on" : "")}>
-          <ul id="m_gnb" className="clearfix">
-            {Menus.map((menu, idx) => {
-              return <MobileGnbItem key={idx} menu={menu} />
-            })}
-          </ul>
-
-          <p
-            className="btn_close"
-            onClick={() => setClickedMicon(!clickedMicon)}
-          >
-            <button>
-              <img src="/images/mobile/btn_m_close.png" alt="close button" />
-            </button>
-          </p>
-        </div>
-
-        <p
-          className={"m_icon" + (clickedMicon ? " on" : "")}
-          onClick={() => setClickedMicon(!clickedMicon)}
-        >
-          <button className="m_block">
-            <img src="/images/mobile/btn_m_menu.png" alt="mobile menu button" />
-          </button>
-        </p> */}
+        <MobileGnbItem menus={Menus} />
       </div>
     </header>
   )
