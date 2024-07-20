@@ -1,11 +1,13 @@
 import clsx from "clsx"
 
-const Gnb = ({ menus }) => {
+import { Menus } from "../constants/list"
+
+const Gnb = () => {
   return (
     <nav className="relative hidden w-full ml-5 group lg:block">
       <h2 className="blind">메인메뉴</h2>
       <ul id="gnb" className="flex justify-between text-center">
-        {menus.map((menu, idx) => (
+        {Menus.map((menu, idx) => (
           <li
             key={idx}
             className={clsx(

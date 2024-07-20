@@ -1,9 +1,11 @@
-import clsx from "clsx"
 import { useState } from "react"
+import clsx from "clsx"
 
-const MobileGnbItem = ({ menus }) => {
+import { Menus } from "../constants/list"
+
+const MobileGnbItem = () => {
   const [visible, setVisible] = useState(false)
-  const [clickedMenuIndex, setClickedmenuIndex] = useState(null)
+  const [clickedMenuIndex, setClickedmenuIndex] = useState<null | number>(null)
 
   const initializeMenu = () => {
     setVisible(!visible)
@@ -32,7 +34,7 @@ const MobileGnbItem = ({ menus }) => {
           }
         )}
       >
-        {menus.map((menu, idx) => (
+        {Menus.map((menu, idx) => (
           <li key={idx}>
             <button
               className="block w-full text-left pl-4 py-3"

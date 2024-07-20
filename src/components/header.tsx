@@ -1,6 +1,6 @@
 import clsx from "clsx"
 
-import { Langs, Menus } from "../constants/list"
+import { Langs } from "../constants/list"
 
 import Gnb from "./gnb"
 import MobileGnbItem from "./mobileGnb"
@@ -49,8 +49,8 @@ const Header = () => {
           </a>
         </h1>
 
-        <Gnb menus={Menus} />
-        <MobileGnbItem menus={Menus} />
+        <Gnb />
+        <MobileGnbItem />
       </div>
     </header>
   )
