@@ -1,101 +1,19 @@
-import React, { useState } from "react";
-import { ContainerStyled } from "../styled/containerStyled";
+// import { useState } from "react"
+
+// import clsx from "clsx"
+import Product from "./product"
 
 const Container = () => {
-  const [showVideo, setShowVideo] = useState(false);
+  // const [showVideo, setShowVideo] = useState(false)
 
   return (
-    <ContainerStyled.Wrap>
-      <article id="container" className="clearfix">
+    <div>
+      <article id="container">
         <h2 className="blind">메인메뉴</h2>
+        <Product />
 
-        <div className="product">
-          <div className="center clearfix">
-            <section className="floor product_box product_top">
-              <a href="#" className="clearfix">
-                <div className="linetop">
-                  <h3>Healthy&amp;Natural</h3>
-                  <span>바닥재</span>
-                  <p>
-                    내추럴한 자연공간을
-                    <br />
-                    연출하는
-                    <br />
-                    아름다운 패턴의
-                    <br />
-                    바닥재입니다.
-                  </p>
-                </div>
-                <div className="img">
-                  <img src="/images/main/con_01on.jpg" alt="바닥재" />
-                </div>
-                <span className="mobile">바닥재</span>
-              </a>
-            </section>
-            <section className="stone product_box product_top">
-              <a href="#" className="clearfix">
-                <div className="linetop">
-                  <h3>Well&#45;being</h3>
-                  <span>인테리어스톤</span>
-                  <p>
-                    자연소재에
-                    <br />
-                    첨단기술을 더한
-                    <br />
-                    친환경 인테리어
-                    <br />
-                    마감재입니다.
-                  </p>
-                </div>
-                <div className="img">
-                  <img src="/images/main/con_02on.jpg" alt="인테리어스톤" />
-                </div>
-                <span className="mobile">인테리어스톤</span>
-              </a>
-            </section>
-            <section className="wallpaper product_box product_bot">
-              <a href="#" className="clearfix">
-                <div className="linebot">
-                  <h3>Beauty&amp;Comfort</h3>
-                  <span>벽지</span>
-                  <p>
-                    편안함과 아름다움을
-                    <br />
-                    추구하는
-                    <br />
-                    신개념 감성벽지입니다.
-                  </p>
-                </div>
-                <div className="img">
-                  <img src="/images/main/con_03on.jpg" alt="벽지" />
-                </div>
-                <span className="mobile">벽지</span>
-              </a>
-            </section>
-            <section className="windows product_box product_bot">
-              <a href="#" className="clearfix">
-                <div className="linebot">
-                  <h3>Scientific System</h3>
-                  <span>창호재</span>
-                  <p>
-                    과학적 시스템으로
-                    <br />
-                    에너지를 지켜주는
-                    <br />
-                    기술의 창호입니다.
-                  </p>
-                </div>
-                <div className="img">
-                  <img src="/images/main/con_04on.jpg" alt="창호재" />
-                </div>
-                <span className="mobile">창호재</span>
-              </a>
-            </section>
-          </div>
-        </div>
-
-        <div
-          className={!!showVideo ? "bg_popup on" : "bg_popup"}
+        {/* <div
+          className={clsx("bg_popup", { on: !!showVideo })}
           onClick={() => setShowVideo(false)}
         >
           <div className="video_area">
@@ -244,10 +162,10 @@ const Container = () => {
               </div>
             </section>
           </div>
-        </div>
+        </div> */}
       </article>
-    </ContainerStyled.Wrap>
-  );
-};
+    </div>
+  )
+}
 
-export default Container;
+export default Container
