@@ -8,7 +8,7 @@ const Product = () => {
         {Products.map((product, idx) => (
           <section
             key={idx}
-            className={clsx({
+            className={clsx("text-center", {
               "lg:order-1": idx === 0,
               "lg:order-2": idx === 2,
               "lg:order-3": idx === 1,
@@ -17,7 +17,7 @@ const Product = () => {
           >
             <a
               href="#"
-              className="flex lg:justify-between justify-center group"
+              className="lg:flex lg:justify-between md:inline-flex group"
             >
               <div
                 className={clsx(
@@ -54,7 +54,6 @@ const Product = () => {
                   "relative z-10",
                   "hidden md:flex flex-col justify-center",
                   "w-[310px] h-[280px]",
-                  "text-center",
                   {
                     "py-10 pl-[50px] pr-10 -ml-2.5": idx % 2 === 0,
                     "after:content-[''] after:absolute after:bottom-10 after:right-[300px]":

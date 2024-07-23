@@ -26,7 +26,7 @@ const MobileGnbItem = () => {
           "text-white",
           "pt-10",
           "transition-all",
-          "bg-black/60",
+          "bg-black/85",
           "overflow-y-auto",
           {
             "right-0": visible,
