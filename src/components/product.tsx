@@ -3,7 +3,7 @@ import { Products } from "../constants/product"
 
 const Product = () => {
   return (
-    <div className="md:my-12 my-2.5">
+    <div className="my-12 px-5 md:px-0">
       <div className="center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2">
         {Products.map((product, idx) => (
           <section
@@ -39,8 +39,8 @@ const Product = () => {
                   className={clsx(
                     "absolute inset-0",
                     "flex justify-center items-center md:hidden",
-                    "text-white font-bold",
-                    "bg-secondary-gray/60 hover:bg-transparent transition duration-1000",
+                    "text-xl text-white font-bold",
+                    "bg-secondary-gray/70 hover:bg-transparent transition duration-1000",
                     "before:content-[''] before:absolute",
                     "before:w-5/6 before:h-5/6",
                     "before:border"
