@@ -2,7 +2,7 @@ import clsx from "clsx"
 
 const Shop = () => {
   const boxConfig = "w-full p-9 bg-no-repeat bg-cover"
-  const buttonConfig = "block w-full mt-5 border leading-loose duration-200"
+  const buttonConfig = "block w-full mt-5 py-2 border duration-200"
 
   return (
     <section
