@@ -3,7 +3,7 @@ import { Boards } from "../constants/list"
 
 const Board = () => {
   return (
-    <section className="md:flex border border-light-gray">
+    <section className="md:flex lg:w-1/2 border border-light-gray">
       {["뉴스", "공지사항"].map((item, idx) => (
         <div
           className={clsx("relative md:w-1/2 p-8 bg-white", {

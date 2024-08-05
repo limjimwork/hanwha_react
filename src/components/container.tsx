@@ -1,4 +1,5 @@
 import Board from "./board"
+import Company from "./company"
 import Product from "./product"
 import Shop from "./shop"
 
@@ -22,42 +23,9 @@ const Container = () => {
           </div>
           <div className="center lg:flex">
             <Board />
+            <Company />
           </div>
         </div>
-
-        {/* 
-        <div className="board">
-          <div className="center clearfix">
-            <section className="co_info board_box clearfix">
-              <div className="recruit">
-                <h3>인재채용</h3>
-                <p>
-                  한화 L&amp;C가 찾고 있는 인재는
-                  <br />
-                  바로 여러분입니다.
-                  <br />
-                  한화 L&amp;C에서 여려분의
-                  <br />
-                  무한한 능력을 펼쳐보십시오.
-                </p>
-                <a href="#">바로가기</a>
-              </div>
-              <div className="contribution">
-                <h3>사회공헌</h3>
-                <p>
-                  마음과 마음을 모아
-                  <br />
-                  따스한 사랑의 손길을 전하는
-                  <br />
-                  한화L&amp;C의 활동을
-                  <br />
-                  전달합니다.
-                </p>
-                <a href="#">바로가기</a>
-              </div>
-            </section>
-          </div>
-        </div> */}
       </article>
     </div>
   )
