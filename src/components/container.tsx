@@ -1,26 +1,27 @@
-// import { useState } from "react"
-
-// import clsx from "clsx"
 import Product from "./product"
+import Shop from "./shop"
 
 const Container = () => {
-  // const [showVideo, setShowVideo] = useState(false)
-
   return (
     <div>
       <article id="container">
         <h2 className="blind">메인메뉴</h2>
         <Product />
-
-        {/* <div
-          className={clsx("bg_popup", { on: !!showVideo })}
-          onClick={() => setShowVideo(false)}
-        >
-          <div className="video_area">
-            <img src="/images/main/bg_pop.jpg" alt="동영상사진" />
+        <div className="px-5 md:px-0 mb-[50px] py-[50px] bg-[#fef4ed]">
+          <div className="center lg:flex">
+            <section className="w-full lg:mr-5 lg:mb-0 mb-5">
+              <h3 className="blind">동영상보기</h3>
+              <img
+                className="w-full h-full mx-auto cursor-pointer"
+                src="/images/main/con_05.jpg"
+                alt="취향을 담다 네이버 TV 동영상"
+              />
+            </section>
+            <Shop />
           </div>
         </div>
 
+        {/* 
         <div className="board">
           <div className="center clearfix">
             <section className="clip board_box">
@@ -133,32 +134,6 @@ const Container = () => {
                 <a href="#">
                   <p className="more">more</p>
                 </a>
-              </div>
-            </section>
-            <section className="service board_box">
-              <div className="onshop">
-                <h3>
-                  <img src="/images/main/ico_onshop.png" alt="cart" />
-                </h3>
-                <p>Online Shop</p>
-                <p>
-                  네이버 스토어팜
-                  <br />
-                  온라인 쇼핑몰입니다.
-                </p>
-                <a href="#">SHOP</a>
-              </div>
-              <div className="gallery">
-                <h3>
-                  <img src="/images/main/ico_gallery.png" alt="gallery" />
-                </h3>
-                <p>Gallery Q</p>
-                <p>
-                  한화L&amp;C의 토털 인테리어
-                  <br />
-                  솔루션 전시장입니다.
-                </p>
-                <a href="#">GALLERY</a>
               </div>
             </section>
           </div>

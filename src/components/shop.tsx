@@ -5,10 +5,17 @@ const Shop = () => {
   const buttonConfig = "block w-full mt-5 border leading-loose duration-200"
 
   return (
-    <section className="flex justify-center text-center text-white flex-col md:flex-row">
+    <section
+      className={clsx(
+        "flex justify-center flex-col md:flex-row",
+        "w-full",
+        "text-center text-white"
+      )}
+    >
       <div
         className={clsx(
           boxConfig,
+          "mb-5 md:mb-0",
           "bg-[url('/public/images/main/con_agency.jpg')]"
         )}
       >

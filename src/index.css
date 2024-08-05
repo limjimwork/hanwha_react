@@ -14,8 +14,13 @@
   top: -9999em;
 }
 
-@media all and (max-width: 1024px) {
-  header,
+@media (min-width: 768px) and (max-width: 1023px) {
+  .center {
+    width: 600px;
+  }
+}
+
+@media all and (max-width: 767px) {
   .center {
     width: 100%;
   }
