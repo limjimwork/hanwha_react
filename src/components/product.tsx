@@ -4,7 +4,7 @@ import { Products } from "../constants/product"
 const Product = () => {
   return (
     <div className="my-12 px-5 md:px-0">
-      <div className="center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2">
+      <div className="center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 gap-5">
         {Products.map((product, idx) => (
           <section
             key={idx}
