@@ -69,7 +69,7 @@ const MobileGnbItem = () => {
           "relative",
           "z-50",
           "lg:hidden",
-          "px-3 py-2",
+          "p-5",
           "before:block",
           "before:content-['']",
           "afbeforeter:w-4",
