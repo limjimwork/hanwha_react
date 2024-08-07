@@ -36,10 +36,10 @@ const Header = () => {
         <h1
           className={clsx(
             "max-w-[177px]",
-            "min-w-[110px]",
+            "min-w-[150px]",
             "w-[35vw]",
             "h-full",
-            "px-3 py-2",
+            "px-5 py-3",
             "lg:-mt-8",
             "lg:px-0 lg:py-0"
           )}
