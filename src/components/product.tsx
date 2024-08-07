@@ -3,8 +3,8 @@ import { Products } from "../constants/product"
 
 const Product = () => {
   return (
-    <div className="my-12 px-5 md:px-0">
-      <div className="center grid lg:grid-cols-2 md:grid-cols-1 grid-cols-2 gap-5">
+    <div className="my-5 md:my-12 px-5 md:px-0">
+      <div className="center grid lg:grid-cols-2 grid-cols-1 gap-5">
         {Products.map((product, idx) => (
           <section
             key={idx}
@@ -22,7 +22,7 @@ const Product = () => {
               <div
                 className={clsx(
                   "relative",
-                  "w-full md:w-[300px] md:h-[280px]",
+                  "w-full h-[180px] md:w-[300px] md:h-[280px]",
                   "bg-no-repeat bg-center bg-cover",
                   product.imgBgUrl,
                   {
@@ -56,12 +56,12 @@ const Product = () => {
                   "w-[310px] h-[280px]",
                   {
                     "py-10 pl-[50px] pr-10 -ml-2.5": idx % 2 === 0,
-                    "after:content-[''] after:absolute after:bottom-10 after:right-[300px]":
+                    "after:content-[''] after:absolute after:bottom-[41px] after:right-[300px] lg:after:bottom-[42px] lg:after:right-[296px]":
                       idx % 2 === 0,
                     "after:border-y-[22px] after:border-r-[21px] after:border-transparent after:border-r-white":
                       idx % 2 === 0,
                     "order-1 py-10 pl-10 pr-[50px] -mr-2.5": idx % 2 === 1,
-                    "before:content-[''] before:absolute before:top-10 before:left-[300px]":
+                    "before:content-[''] before:absolute before:top-[41px] before:left-[300px] lg:before:top-[42px] lg:before:left-[296px]":
                       idx % 2 === 1,
                     "before:border-y-[22px] before:border-l-[21px] before:border-transparent before:border-l-white":
                       idx % 2 === 1,

@@ -26,7 +26,7 @@ const Visual = () => {
   const [mouseOver, setMouseOver] = useState(false)
 
   const textConfig =
-    "md:text-2xl text-white font-semibold lg:mt-[290px] lg:ml-[900px] drop-shadow-[2px_2px_rgba(0,0,0,0.4)] text-lg text-center mt-[19%]"
+    "md:text-2xl text-white font-semibold lg:mt-[290px] lg:ml-[900px] drop-shadow-[2px_2px_rgba(0,0,0,0.4)] text-lg text-center mt-[21%] md:mt-[19%]"
   const textStrongConfig = "md:text-3xl text-primary-orange font-bold text-xl"
 
   const bannerText = [
@@ -48,7 +48,7 @@ const Visual = () => {
   const banner = (
     <div
       className={clsx(
-        "absolute inset-0 w-full h-[40vw] lg:h-[580px]",
+        "absolute inset-0 w-full h-[50vw] md:h-[40vw] lg:h-[580px]",
         "bg-no-repeat bg-center bg-cover",
         {
           "bg-[url('/public/images/main/bg_main01.jpg')]": index === 0,
@@ -93,7 +93,7 @@ const Visual = () => {
 
   return (
     <div
-      className="relative h-[40vw] lg:h-[580px]"
+      className="relative h-[50vw] md:h-[40vw] lg:h-[580px]"
       onMouseOver={() => setMouseOver(true)}
       onMouseOut={() => setMouseOver(false)}
     >

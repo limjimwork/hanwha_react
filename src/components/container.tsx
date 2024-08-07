@@ -9,7 +9,7 @@ const Container = () => {
       <article id="container">
         <h2 className="blind">메인메뉴</h2>
         <Product />
-        <div className="px-5 md:px-0 py-[50px] bg-light-orange">
+        <div className="px-5 md:px-0 py-5 md:py-12 bg-light-orange">
           <div className="center lg:flex !mb-5">
             <section className="w-full lg:mr-5 lg:mb-0 mb-5">
               <h3 className="blind">동영상보기</h3>

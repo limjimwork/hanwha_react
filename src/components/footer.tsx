@@ -17,14 +17,14 @@ const FamilySites = [
 
 const Footer = () => {
   return (
-    <footer className="center lg:flex lg:justify-between py-[50px]">
+    <footer className="center lg:flex lg:justify-between py-5 md:py-12">
       <h2
         className={clsx(
           "max-w-[177px]",
           "min-w-[150px]",
           "w-[35vw]",
           "h-full",
-          "px-5 py-3",
+          "px-5",
           "lg:px-0 lg:py-0"
         )}
       >
@@ -38,11 +38,12 @@ const Footer = () => {
           {Terms.map((term, idx) => (
             <li
               className={clsx(
-                "pl-2 mr-2",
+                "mr-2",
                 "relative before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0",
                 "before:w-px before:h-1/2",
                 "before:content-[''] before:bg-secondary-gray",
                 {
+                  "pl-2": idx !== 0,
                   "pl-0 before:hidden": idx === 0,
                 }
               )}
